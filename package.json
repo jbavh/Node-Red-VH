@@ -1,5 +1,5 @@
 {
-    "name": "Node-Red-VH",
+    "name": "node-red-vh",
     "description": "A Node-RED Project",
     "version": "0.0.1",
     "dependencies": {},
@@ -8,5 +8,8 @@
             "flowFile": "flow.json",
             "credentialsFile": "flow_cred.json"
         }
+    },
+    "scripts": {
+        "start": "node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS \"--userDir\" \"/data\""
     }
 }
